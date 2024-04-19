@@ -1,0 +1,150 @@
+.tlchargement-4-removebg-pr-icon {
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.connexion {
+  position: absolute;
+  top: 91px;
+  left: 16px;
+  font-size: 32px;
+}
+.en-savoir-plus,
+.utiliser-votre-compte {
+  position: absolute;
+  top: 156px;
+  left: 16px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+}
+.en-savoir-plus {
+  top: 442px;
+  left: 13px;
+  color: var(--color-royalblue);
+}
+.sil-ne-sagit {
+  margin: 0;
+}
+.sil-ne-sagit-container {
+  position: absolute;
+  top: 389px;
+  left: 16px;
+  font-size: var(--font-size-sm);
+  color: var(--color-gray);
+}
+.crer-un-compte {
+  position: absolute;
+  top: 506px;
+  left: 13px;
+  color: var(--color-royalblue);
+}
+.franais-france {
+  position: absolute;
+  top: 640px;
+  left: calc(50% - 164px);
+  text-align: center;
+}
+.index-child {
+  position: absolute;
+  top: 646px;
+  left: 174px;
+  width: 9px;
+  height: 6px;
+  object-fit: contain;
+}
+.aide,
+.conditions,
+.confidentialit {
+  position: absolute;
+  top: 700px;
+  left: calc(50% - 164px);
+  text-align: center;
+}
+.conditions,
+.confidentialit {
+  left: calc(50% - 99px);
+}
+.conditions {
+  left: calc(50% + 28px);
+}
+.component-1-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 29px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.suivant {
+  position: absolute;
+  top: 23.68%;
+  left: 20.22%;
+}
+.component-1,
+.saisissez-votre-mot {
+  position: absolute;
+  font-size: var(--font-size-sm);
+}
+.component-1 {
+  top: 496px;
+  left: 255px;
+  width: 89px;
+  height: 38px;
+  text-align: center;
+  color: var(--color-white);
+}
+.saisissez-votre-mot {
+  top: 251px;
+  left: 16px;
+  color: var(--color-gray);
+}
+.mot-de-passe {
+  position: absolute;
+  top: 352px;
+  left: 13px;
+  color: var(--color-royalblue);
+}
+.index {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 740px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-smi);
+  color: var(--color-black);
+  font-family: var(--font-open-sans);
+}
+/* Ajout de style pour la zone de texte utilisateur */
+.zone-texte-utilisateur1 {
+  position: absolute;
+  top:  180px; /* Ajuste la position verticale selon tes besoins */
+  left: 16px; /* Ajuste la position horizontale selon tes besoins */
+  width: calc(24% - 16px); /* Utilise la largeur totale moins les marges */
+  height: 48px; /* Ajuste la hauteur selon tes besoins */
+  border: 1px solid #ccc; /* Ajoute une bordure */
+  border-radius: 5px; /* Arrondis les coins */
+  padding: 5px; /* Ajoute un espacement à l'intérieur de la zone de texte */
+  font-size: 14px; /* Ajuste la taille de la police */
+}
+
+/* Ajout de style pour la zone de texte utilisateur */
+.zone-texte-utilisateur2 {
+  position: absolute;
+  top:  275px; /* Ajuste la position verticale selon tes besoins */
+  left: 16px; /* Ajuste la position horizontale selon tes besoins */
+  width: calc(24% - 16px); /* Utilise la largeur totale moins les marges */
+  height: 48px; /* Ajuste la hauteur selon tes besoins */
+  border: 1px solid #ccc; /* Ajoute une bordure */
+  border-radius: 5px; /* Arrondis les coins */
+  padding: 5px; /* Ajoute un espacement à l'intérieur de la zone de texte */
+  font-size: 14px; /* Ajuste la taille de la police */
+}
