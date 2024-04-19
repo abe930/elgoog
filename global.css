@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-open-sans: "Open Sans";
+
+  /* font sizes */
+  --font-size-smi: 13px;
+  --font-size-sm: 14px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-royalblue: #0b57d9;
+  --color-gray: #1f1f1f;
+  --color-black: #000;
+}
